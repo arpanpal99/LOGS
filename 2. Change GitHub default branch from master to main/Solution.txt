@@ -5,7 +5,7 @@ git branch -m master main
 
 Step 2 – Push ‘main’ to remote repo (I had to use --force because main branch, for me was "FRESH", with no contributers)
 git push -u origin main --force 
-(Or, git pull origin master --allow-unrelated-histories [untested by me])
+(Or, git push -u origin main --allow-unrelated-histories [untested by me])
 
 Step 3 – Point HEAD to ‘main’ branch
 git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
