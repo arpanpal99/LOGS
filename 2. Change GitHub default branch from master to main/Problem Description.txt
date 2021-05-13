@@ -1,0 +1,12 @@
+1. I had created a main branch in GitHub with a Readme file.
+
+2. Followed by uploading my local Git repo to a new branch in GitHub, named 'master'.
+
+3. Next I intended to move everything from master to main and remove master both locally and remotely.
+
+4. When I used the command "git push -u origin main", this is where the problem arose.
+
+"Updates were rejected because the remote contains work that you do not have locally"
+
+5. When tried to "git pull", another error showed
+"fatal: refusing to merge unrelated histories"

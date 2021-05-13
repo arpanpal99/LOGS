@@ -1,0 +1,48 @@
+When I'm in Master branch in Git bash, execute the following commands:
+
+Step 1 – Move the master branch to ‘main’
+git branch -m master main
+
+Step 2 – Push ‘main’ to remote repo (I had to use --force because main branch, for me was "FRESH", with no contributers)
+git push -u origin main --force 
+(Or, git pull origin master --allow-unrelated-histories [untested by me])
+
+Step 3 – Point HEAD to ‘main’ branch
+git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
+
+Step 4 – Change default branch to ‘main’ on GitHub site (Not in the terminal)
+Go to the repo settings --> Branches --> change default branch to main (if not already it is main)
+
+Step 5 – 
+Delete ‘master’ branch on the remote repo
+git push origin --delete master
+
+Optional – 
+Delete ‘master’ branch on the local repo
+git checkout main
+git branch -d master
+
+------------------------------------------------------------------------------------------------------------------------------------------
+List all local and remote branches
+git branch -a 
+------------------------------------------------------------------------------------------------------------------------------------------
+Deleting a branch LOCALLY
+Git will not let you delete the branch you are currently on so you must make sure to checkout a branch that you are NOT deleting. 
+For example: git checkout master
+
+Delete a branch with git branch -d <branch>.
+
+For example: git branch -d fix/authentication
+
+The -d option will delete the branch only if it has already been pushed and merged with the remote branch. 
+Use -D instead if you want to force the branch to be deleted, even if it hasn't been pushed or merged yet.
+
+The branch is now deleted locally.
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+

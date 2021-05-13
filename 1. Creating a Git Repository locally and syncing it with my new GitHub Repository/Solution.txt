@@ -1,0 +1,20 @@
+Step 1: Open CMD in the directory which will be the Git Repository
+
+Step 2: git init
+
+Step 3: git add .
+[Optional: Use 'git status' in bash to view all the files which are going to be staged to the first commit]
+
+Step 4: git commit -m 'message'
+
+Step 5: Copy your remote repository's URL from GitHub
+
+Step 6: git remote add origin 'url_name'
+
+Step 7: git push -u origin master
+[Optional and only once: Fill in your GitHub username and password]
+
+Step 8: View your files in your repository hosted on GitHub :)
+-------------------------------------------------------------------------------------------------------
+To remove a remote origin url:
+git remote rm <remote-name (like origin)>
