@@ -1,0 +1,36 @@
+Eclipse Website for version 2020-06:
+https://www.eclipse.org/downloads/packages/release/2020-06/r/eclipse-ide-enterprise-java-developers
+
+--------------------------------------------------------------------------------------
+From bash:
+
+1. sudo apt install -y wget
+
+2. Download the Eclipse package  
+wget http://mirror.umd.edu/eclipse/technology/epp/downloads/release/2020-06/R/eclipse-java-2020-06-R-linux-gtk-x86_64.tar.gz
+
+3. Extract Eclipse package to your desired directory (Ex. /opt/)
+sudo tar -zxvf eclipse-java-2020-06-R-linux-gtk-x86_64.tar.gz -C /opt/
+
+4. Symlink the Eclipse executable to /usr/bin path so that other users on your machine can able to use Eclipse IDE from the command line
+sudo ln -s /usr/eclipse/eclipse /usr/bin/eclipse
+
+5. In addition to the command line, you can set up the launcher icon in GNOME to start the Eclipse IDE
+sudo nano /usr/share/applications/eclipse.desktop
+
+Copy and paste the following information into the above file
+[Desktop Entry]
+Encoding=UTF-8
+Name=Eclipse IDE
+Comment=Eclipse IDE
+Exec=/usr/bin/eclipse
+Icon=/usr/eclipse/icon.xpm
+Terminal=false
+Type=Application
+StartupNotify=false
+
+Press Enter
+
+6. Open Eclipse from Bash: 
+eclipse
+Or, open Eclipse from Activity.

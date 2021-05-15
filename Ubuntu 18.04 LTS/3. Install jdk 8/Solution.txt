@@ -1,0 +1,22 @@
+Check which version of the JDK your system is using:
+java -version
+
+If the OpenJDK is used, the results should look like:
+openjdk version "1.8.0_242"
+OpenJDK Runtime Environment (build 1.8.0_242-b09)
+OpenJDK 64-Bit Server VM (build 25.242-b09, mixed mode)
+If Oracle Java is used, the results should look like:
+java version "1.8.0_241"
+Java(TM) SE Runtime Environment (build 1.8.0_241-b07)
+Java HotSpot(TM) 64-Bit Server VM (build 25.241-b07, mixed mode)
+
+----------------------------------------------------------------------------------------------------------
+1. Update the repositories
+sudo apt-get update
+
+2. sudo apt-get install openjdk-8-jdk
+
+3. java -version
+
+4. If the correct version of Java is not being used, use the alternatives command to switch it:
+sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0_version/bin/java

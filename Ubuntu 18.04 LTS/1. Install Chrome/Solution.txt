@@ -1,0 +1,19 @@
+Press Ctrl+Alt+T to open a terminal window.
+
+1. sudo apt update
+2. sudo apt upgrade
+
+3. wget --version 
+sudo apt install wget [To install wget]
+
+4. Download the Chrome package. Since there is no longer a 32-bit version of Chrome, you'll need the 64-bit version
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+5. Install Chrome from the downloaded package
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+6. Fix errors that occurred in the Chrome installation
+sudo apt-get install -f
+
+7. Type google-chrome and press ↵ Enter to launch Chrome
+Or, it can be found in the dash.
