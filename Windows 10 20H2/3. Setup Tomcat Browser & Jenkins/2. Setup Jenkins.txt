@@ -1,0 +1,32 @@
+After setting up tomcat as mentioned in "1. Setup Tomcat.txt", follow these steps.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Step 1: SETTING UP JENKINS
+Download jenkins.war 2.289 LTS from the link:
+https://get.jenkins.io/war-stable/2.289.1/jenkins.war
+
+Step 2: 
+Paste the jenkins.war file in the directory 
+"C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps"
+Restart Tomcat as mentioned in step 4.
+
+Step 3:
+Go to Tomcat homepage (http://localhost:8082/)
+Click the manager app button and you'll find "/jenkins" in the applications path list. Click on "/jenkins".
+
+Step 4: UNLOCK JENKINS
+Initially jenkins will ask for a password and the website itself will provide the path 
+where that password file is located in your computer.
+Initially for me, the password was at a location 
+"C:\Windows\ServiceProfiles\LocalService\.jenkins\secrets\initialAdminPassword"
+Copy and Paste that password in the browser to get to the account setup page
+
+Step 5: CUSTOMIZE JENKINS
+Install suggested plugins
+
+Step 6: CREATE FIRST ADMIN USER
+Give username, password, full name and other details as required.
+Click save and finish
+
+Well, now JENKINS IS READY :D
+--------------------------------------------------------------------------------------------------------------------------------------------------
