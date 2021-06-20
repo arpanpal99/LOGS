@@ -1,0 +1,23 @@
+Step 1: 
+Download the Oracle Database 18C Express Edition from the link: 
+https://www.oracle.com/in/database/technologies/xe-downloads.html
+Choose among Windows or Linux
+Refer "1.png".
+
+Step 2:
+Unzip it wherever you like (It doesn't set the DB_Home to the directory where you unzip it)
+Refer "2.png".
+Then double click the setup.
+
+Step 3:
+Choose the db_home directory when asked. 
+For mine it was "C:\app\arpan\product\18.0.0"
+
+Step 4: 
+It will ask for password for your oracle database.
+Refer "3.png".
+
+Step 5:
+Proceed with the installation.
+Easy and straight forward installation. No other details to be provided like the Oracle 19c installation.
+Refer "4.png".

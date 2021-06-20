@@ -1,0 +1,14 @@
+Step 1:
+Download SQL Developer with or without JRE from the link:
+https://www.oracle.com/tools/downloads/sqldev-downloads.html
+(I downloaded SQL Developer without JRE because I had JRE already installed in my system at "C:\Program Files\Java\jre1.8.0_291")
+
+Step 2: 
+Unzip SQL Developer at "C:\Program Files" by creating a new folder according to your wish (Recommended)
+(I extracted it to the location "C:\app\arpan\product\sqldeveloper", 
+to keep both oracle 18c and SQL Dev under "C:\app\arpan\product" directory)
+
+Step 3:
+No more "installation" required for SQL Dev. 
+You can double click "sqldeveloper.exe" present at your extracted directory to open SQL Developer.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

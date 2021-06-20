@@ -1,0 +1,14 @@
+For me it was showing an error in SQL Dev "Welcome Page" under "Database Detected" section,
+because it was unable to find "tnsnames.ora".
+
+Solution is provided here: 
+https://stackoverflow.com/questions/2019230/use-tnsnames-ora-in-oracle-sql-developer
+
+Step 1:
+I added an environment variable named "TNS_ADMIN" and set the path to 
+"C:\app\arpan\product\18.0.0\dbhomeXE\network\admin\sample" bacause for me this tnsnames.ora was located there.
+Refer "6. My 'tnsnames.ora' file location.png".
+
+Step 2:
+I restarted SQL Dev and the problem was solved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
