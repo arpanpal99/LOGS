@@ -1,0 +1,26 @@
+Considering you have Oracle Database 18C Express Edition installed in your system 
+and all the java paths are properly declared for eclipse to work
+
+Step 1: 
+CREATE A PROJECT "Test_OJDBC_Connection"
+
+Step 2:
+1.png	Right click on the project name --> Build path --> Add libraries --> 
+2.png	Connectivity Driver Definition --> 
+3.jpg	Click on the button with a circular shape with a star within it (New Driver Definition) --> New Driver Definition Window opens
+4.png	Choose Oracle from the Vendor Filter drop down menu --> 
+5.png	Choose Oracle Thin Driver with system version 10 --> Set the Driver Name according to your choice -->
+6.png	Go to JAR List --> Remove the existing jar files
+7.png	Add JAR/ZIP --> Choose 'orjdbc8.jar' that comes along with Oracle Database 18C Express Edition --> Click Open
+	(For me it's present at location "C:\app\arpan\product\18.0.0\dbhomeXE\jdbc\lib")
+	(It's generally present in 'jdbc\lib' folder within your Oracle DB Home directory
+8.png	Click on the newly added driver within the "Driver files" --> Click Ok
+9.png	Choose your newly defined driver from the "Available Driver Definitions" within "Add library" window.
+10.png	Click Finish.
+
+Thus you can access your Oracle Database from Eclipse. 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+And even if your database gets updated by someone else from somewhere else (like, SQL Dev), 
+you can refresh the project in Eclipse and view the latest tables and changes made.
+
