@@ -18,9 +18,6 @@ Step 2:
 09.png	Choose your newly defined driver from the "Available Driver Definitions" within "Add library" window.
 10.png	Click Finish.
 
-Thus you can access your Oracle Database from Eclipse. 
+Thus your Oracle 18C "ojdbc8.jar" has been loaded within your project in Eclipse. 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-And even if your database gets updated by someone else from somewhere else (like, SQL Dev), 
-you can refresh the project in Eclipse and view the latest tables and changes made.
 

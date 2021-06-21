@@ -1,0 +1,3 @@
+If your database gets updated by someone else from somewhere else (like, SQL Dev), 
+you can refresh the project in Eclipse and view the latest tables and changes made.
+
