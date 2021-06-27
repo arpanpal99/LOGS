@@ -1,6 +1,7 @@
 Step 1: Open CMD in the directory which will be the Git Repository
 
 Step 2: git init
+[Optional: Use 'git config core.longpaths true' if your project has long file names and deep file paths]
 
 Step 3: git add .
 [Optional: Use 'git status' in bash to view all the files which are going to be staged to the first commit]

@@ -1,0 +1,33 @@
+Check whether you have JDK installed in your system using the command 
+java -version
+[If installed, skip step 1]
+
+Step 1: Remove existing jdk11 from JVM folders in "/usr/lib/jvm/"
+
+sudo rm -rf /usr/lib/jvm/java-1.11.0-openjdk-amd64
+sudo rm -rf /usr/lib/jvm/java-11-openjdk-amd64
+
+----------
+Step 2: Install jdk8 and jre8 and verify the installation
+
+sudo apt update
+sudo apt install openjdk-8-jdk openjdk-8-jre
+java -version
+
+----------
+Step 3: Set Java environment variables (JAVA_HOME & JRE_HOME)
+
+a) Open environment variable file in nano editor 
+sudo nano /etc/environment
+
+b) After the PATH variable line, add the following line
+JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+JRE_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+
+-----------
+Step 4: Save & Exit
+Ctrl+O (Save)
+Press Enter
+Ctrl+X (Exit)
+
+

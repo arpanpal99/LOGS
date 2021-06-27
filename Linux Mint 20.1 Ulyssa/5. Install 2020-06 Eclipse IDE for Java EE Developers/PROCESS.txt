@@ -1,0 +1,43 @@
+Link for Downloading Eclipse IDE for Java EE Developers 2020-06
+---------------------------------------------------------------------------------------------------
+https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2020-06/R/eclipse-jee-2020-06-R-linux-gtk-x86_64.tar.gz
+---------------------------------------------------------------------------------------------------
+
+Step 1: Go to 'opt' directory where programs are generally installed
+cd /opt
+
+Step 2: Unzip the downloaded tar.gz here
+sudo tar -xvzf ~/Downloads/eclipse-jee-2020-06-R-linux-gtk-x86_64.tar.gz
+
+Step 3: Create a shortcut file for Eclipse
+nano eclipse.desktop
+
+Step 4: Copy and paste the following lines in the nano editor
+
+[Desktop Entry]
+Name=Eclipse
+Type=Application
+Exec=/opt/eclipse/eclipse
+Terminal=false
+Icon=/opt/eclipse/icon.xpm
+Comment=Integrated Development Environment
+NoDisplay=false
+Categories=Development;IDE;
+Name[en]=Eclipse
+Name[en_US]=Eclipse
+
+Step 5: Save & Exit
+Ctrl + O
+Press Enter
+Ctrl + X
+
+Step 6: Install the shortcut
+sudo desktop-file-install eclipse.desktop
+
+Step 7: Now search for Eclipse in the dashboard and open it.
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+
